@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 html {
     font-family: 'Lato', sans-serif;
 }
@@ -21,11 +25,12 @@ html {
 
 }
 
-#nav li {
+#nav > li {
     display: inline-block;
+    position: relative;
 }
 
-#nav li a {
+#nav > li > a {
     color: #fff;
     font-size: 15px;
     text-transform: uppercase;
@@ -34,18 +39,36 @@ html {
     padding: 0 24px;
 }
 
-#nav li:hover a {
+#nav > li:hover > a {
     display: inline-block;
     color: #000;
     background-color: #ccc;
 }
 
 #nav .subnav {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
 }
 
-#slider {
+#nav .subnav li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 4px 10px;
+    line-height: 24px;
+}
 
+#nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+#slider {
+    min-height: 500px;
+    background-color: #333;
 } 
 
 #content {
@@ -55,3 +78,5 @@ html {
 #footer {
 
 }
+
+
