@@ -4,4 +4,54 @@
     box-sizing: border-box;
 }
 
-h1 { color: red; }
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+#app {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #000;
+}
+
+#nav {
+
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+#nav li:hover a {
+    display: inline-block;
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+}
+
+#slider {
+
+} 
+
+#content {
+
+}
+
+#footer {
+
+}
